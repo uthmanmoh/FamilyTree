@@ -9,10 +9,9 @@ import java.time.LocalDate
 @Node
 class Member(
     @Id @GeneratedValue var id: Long? = null,
-    var name: String? = null,
-    var birthDate: LocalDate? = null,
+    var name: String,
+    var birthDate: LocalDate,
     var deathDate: LocalDate? = null,
     @Relationship(type = "CHILD", direction = Relationship.Direction.OUTGOING)
     var children: List<Member> = emptyList(),
 )
-
