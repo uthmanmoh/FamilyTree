@@ -1,2 +1,2 @@
-- [ ] Test neo4j connection and endpoints
-- [ ] Possibly look into docker neo4j setup
+- [ ] Add `/api` to the URL (look for the application.properties setting)
+- [ ] Start working on more endpoints
