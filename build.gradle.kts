@@ -27,7 +27,6 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
-    testImplementation("org.springframework:spring-webflux")
     testImplementation("org.springframework.graphql:spring-graphql-test")
     testImplementation("org.testcontainers:junit-jupiter")
     testImplementation("org.testcontainers:neo4j:1.19.4")

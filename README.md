@@ -4,12 +4,14 @@ This is the backend for the Family Tree project. It lets you manage a database o
 
 It is written in Kotlin using the Spring Boot framework, and Neo4j as the database.
 
-## Running the backend alone (if the database is already running)
+## Development
+
+### Running the backend alone (if the database is already running)
 ```bash
 gradle bootRun
 ```
 
-## Running the backend with the database
+### Running the backend with the database
 Create a `.env` file in the root directory with the following variables set:
 ```bash
 NEO4J_USERNAME=<YOUR_NEO4J_USERNAME>
@@ -21,8 +23,16 @@ And then run:
 docker-compose up
 ```
 
-## Run the tests
+### Run the tests
 ```bash
 gradle test
 ```
 This will startup a Neo4j database in a docker container and run the tests.
+
+## Progress so far
+
+### Endpoints Completed and Tested
+
+- `GET /members` - Get all members
+- `POST /members` - Create a new member
+- `DELETE /members/{id}` - Delete a member
